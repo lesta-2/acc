@@ -18,12 +18,12 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://raw.githubusercontent.com/paie/acc/xray/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/paie/acc/xay/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/paie/acc/xray/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/paie/acc/xay/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #install xray
-wget https://raw.githubusercontent.com/paie/acc/xray/main/ins-xray.sh && chmod +x ins-xray.sh && screen -S v2ray ./ins-xray.sh
-wget https://raw.githubusercontent.com/paie/acc/xray/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/paie/acc/xay/main/ins-xray.sh && chmod +x ins-xray.sh && screen -S v2ray ./ins-xray.sh
+wget https://raw.githubusercontent.com/paie/acc/xay/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/ins-xray.sh
@@ -44,7 +44,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/paie/acc/xray/main/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/paie/acc/xay/main/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
